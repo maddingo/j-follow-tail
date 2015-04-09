@@ -1,1 +1,0 @@
-Extract the zip file in your <Program Files> folder and launch the executable.
