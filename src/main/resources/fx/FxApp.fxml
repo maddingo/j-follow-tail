@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.FxController">
+	<top>
+		<!--MenuBar id="menu">
+			<Menu id="fileMenu" text="_File" mnemonicParsing="true">
+				<MenuItem id="fileOpen" text="_Open"/>
+				<MenuItem id="fileExit" text="_Exit" />
+			</Menu>
+			<Menu id="aboutMenu" text="_About" mnemonicParsing="true">
+				<MenuItem id="aboutAbout" text="_About..." />
+			</Menu>
+		</MenuBar-->
+	</top>
+	<center>
+		<VBox>
+			<HBox spacing="3.0">
+				<Button text="Open Log" onAction="#openLogFile"/>
+				<Button text="Highlighting"/>
+				<Button text="Find" />
+				<CheckBox text="Tail" fx:id="tail"/>
+				<TextField fx:id="logFileName" HBox.hgrow="ALWAYS"/>
+			</HBox>
+			<TabPane VBox.vgrow="ALWAYS" fx:id="fileTabs"/>
+		</VBox>
+	</center>
+</BorderPane>
+
